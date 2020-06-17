@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: normal;
+    color: #363636;
 }
 
 .header {
@@ -82,4 +83,212 @@ body {
     border: none;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.film {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #D4D4D4;
+}
+
+.container {
+    max-width: 1130px;
+    margin: auto;
+}
+
+.film-wrapper {
+    display: flex;
+}
+
+.film-trailer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.poster {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 358px;
+}
+
+.trailer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #d4d4d4;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.trailer-button-icon {
+    margin-right: 14px;
+}
+
+.trailer-button-text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+}
+
+.film-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 16px;
+}
+
+.film-subtitle {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+}
+
+.film-description {
+    max-width: 514px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+.about-film {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.about-text-bold {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.about-text-regular {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.left-side {
+    margin-right: 40px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-counter {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #5671F6;
+    margin-right: 28px;
+}
+
+.rating-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 12px;
+}
+
+.rating-text {
+    display: block;
+    margin-bottom: 7px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.rating-text-bold {
+    font-weight: bold;
+}
+
+.cast {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #A5A5A5;
+    margin-right: 30px;
+}
+
+.section-title.active {
+    font-weight: bold;
+    color: #363636;
+}
+
+.tabs-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin-bottom: 35px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    margin-bottom: 6px;
+}
+
+.en-name {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A5A5A5;
 }
