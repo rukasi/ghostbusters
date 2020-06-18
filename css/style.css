@@ -55,6 +55,7 @@ body {
 
 .button-group {
     height: 100%;
+    display: flex;
 }
 
 .button {
@@ -83,6 +84,37 @@ body {
     border: none;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.mobile-buttons {
+    display: none;
+}
+
+/* M-search */
+.search-button {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+/* Burger */
+.m-menu-button {
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-line {
+    display: block;
+    height: 2px;
+    background-color: #000;
+    width: 18px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 40px;
 }
 
 .film {
@@ -291,4 +323,264 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #A5A5A5;
+}
+
+.news {
+    background-color: #F3F3F3;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.section-news-title {
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card {
+    flex-basis: 23%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.news-date {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.news-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .card-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .header {
+        height: 90px;
+        padding-left: 20px;
+    }
+
+    .line {
+        margin-left: 20px;
+    }
+
+    .navigation {
+        margin-right: 20px;
+    }
+
+    .input-search {
+        margin-left: 20px;
+    }
+
+    .navigation-link {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .sign-up {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+
+    .film-title {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .film-description {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about-film {
+        margin-bottom: 30px;
+    }
+
+    .about-text-bold {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        flex-basis: 50%;
+    }
+
+    .card-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .news-card {
+        flex-basis: 48%;
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .input-search {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .film {
+       padding-top: 50px; 
+       padding-bottom: 60px;
+    }
+
+    .film-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .film-text {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .cast {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .news {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .header {
+        height: 80px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .button-group {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .input-search {
+        display: none;
+    }
+
+    .mobile-buttons {
+        display: block;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .input-search:focus {
+        width: auto;
+    }
+
+    .film-trailer {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .poster {
+        width: 100%;
+    }
+
+    .film-text {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .film-title {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+
+    .film-subtitle {
+        font-size: 14x;
+        line-height: 16px;
+        margin-bottom: 26px;
+    }
+
+    .film-description {
+        font-size: 14px;
+        line-height: 150%;
+        margin-bottom: 40px;
+    }
+
+    .about-film {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+
+    .about-text-bold {
+        display: inline-block;
+    }
+
+    .about-text {
+        margin-bottom: 10px;
+    }
+
+    .tabs {
+        margin-bottom: 35px;
+    }
+
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cast {
+        padding-bottom: 50px;
+    }
+
+    .news-card {
+        flex-basis: 100%;
+    }    
+
 }
