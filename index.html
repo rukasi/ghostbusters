@@ -12,16 +12,18 @@
     <header class="header">
         <img width="68px" src="./img/logo.png" alt="Logo: film" class="logo">
         <div class="line"></div>
-        <input type="text" class="input-search" placeholder="Поиск по фильмам...">
-        <nav class="navigation">
-            <a href="#" class="navigation-link">Фильмы</a>
-            <a href="#" class="navigation-link">ТВ</a>
-            <a href="#" class="navigation-link">Новости</a>
-            <a href="#" class="navigation-link">О сервисе</a>
-        </nav>
-        <div class="button-group">
-            <button class="button sign-up">Регистрация</button>
-            <button class="button login">Войти</button>
+        <div class="m-menu">
+            <input type="text" class="input-search" placeholder="Поиск по фильмам...">
+            <nav class="navigation">
+                <a href="#" class="navigation-link">Фильмы</a>
+                <a href="#" class="navigation-link">ТВ</a>
+                <a href="#" class="navigation-link">Новости</a>
+                <a href="#" class="navigation-link">О сервисе</a>
+            </nav>
+            <div class="button-group">
+                <button class="button sign-up">Регистрация</button>
+                <button class="button login">Войти</button>
+            </div>
         </div>
         <div class="mobile-buttons">
             <button class="search-button">
@@ -40,10 +42,10 @@
             <div class="film-wrapper">
                 <div class="film-trailer">
                     <img src="./img/poster.jpg" alt="Poster" class="poster">
-                    <button class="trailer-button">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=84a2VD68hJU" class="trailer-button">
                         <img src="./img/play.svg" alt="Play" class="trailer-button-icon">
                         <span class="trailer-button-text">Посмотреть трейлер</span>
-                    </button>
+                    </a>
                 </div>
                 <!-- /.film-trailer -->
                 <div class="film-text">
@@ -109,10 +111,10 @@
     <section class="cast">
         <div class="container">
             <div class="tabs">
-                <h2 class="section-title active">Актеры</h2>
-                <h2 class="section-title">Создатели</h2>
+                <h2 class="tab section-title active" data-target="#actors">Актеры</h2>
+                <h2 class="tab section-title" data-target="#creators">Создатели</h2>
             </div>
-            <div class="tabs-content">
+            <div class="tabs-content visible" id="actors">
                 <div class="card">
                     <img src="./img/actors/1.jpg" alt="Кэрри Кун" class="card-image">
                     <div class="card-text">
@@ -179,36 +181,92 @@
                 <!-- /.card -->
             </div>
             <!-- /.tabs-content -->
+            <div class="tabs-content" id="creators">
+                <div class="card">
+                    <img src="./img/actors/9.jpg" alt="Кэрри Кун" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Джейсон Райтман</h3>
+                        <span class="en-name">Jason Reitman</span>
+                    </div>
+                </div>
+                <!-- /.card -->
+                <div class="card">
+                    <img src="./img/actors/6.jpg" alt="Билл Мюррей" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Дэн Эйкройд</h3>
+                        <span class="en-name">Dan Aykroyd</span>
+                    </div>
+                </div>
+            <!-- /.card -->
+            </div>
+            <!-- /.tabs-content -->
         </div>
     </section>
     <!-- /.cast -->
     <section class="news">
         <div class="container">
             <h2 class="section-title section-news-title">Новости по теме</h2>
-            <div class="news-cards">
-                <div class="news-card">
-                    <span class="news-date">31 марта 2020</span>
-                    <h3 class="news-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <span class="news-date">31 марта 2020</span>
+                            <h3 class="news-title">«Морбиуса» и «Охотников за привидениями» перенесли на следующий год</h3>
+                        </div>
+                        <!-- /.news-card -->
+                    </div>
+                    <!-- /.swipe-slide -->
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <span class="news-date">9 декабря 2019</span>
+                            <h3 class="news-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
+                        </div>
+                        <!-- /.news-card -->
+                    </div>
+                    <!-- /.swipe-slide -->
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <span class="news-date">11 ноября 2019</span>
+                            <h3 class="news-title">Новые «Охотники за привидениями» обзавелись названием</h3>
+                        </div>
+                        <!-- /.news-card -->
+                    </div>
+                    <!-- /.swipe-slide -->
+                    <div class="swiper-slide">
+                        <div class="news-card">
+                            <span class="news-date">19 октября 2019</span>
+                            <h3 class="news-title">Завершились съёмки новых «Охотников за привидениями»</h3>
+                        </div>
+                        <!-- /.news-card -->
+                    </div>
+                    <!-- /.swipe-slide -->
                 </div>
-                <!-- /.news-card -->
-                <div class="news-card">
-                    <span class="news-date">9 декабря 2019</span>
-                    <h3 class="news-title">Наследники: Вышел дебютный трейлер новых «Охотников за привидениями»</h3>
-                </div>
-                <!-- /.news-card -->
-                <div class="news-card">
-                    <span class="news-date">11 ноября 2019</span>
-                    <h3 class="news-title">Новые «Охотники за привидениями» обзавелись названием</h3>
-                </div>
-                <!-- /.news-card -->
-                <div class="news-card">
-                    <span class="news-date">19 октября 2019</span>
-                    <h3 class="news-title">Завершились съёмки новых «Охотников за привидениями»</h3>
-                </div>
-                <!-- /.news-card -->
+                <!-- /.swiper-wrapper -->
+                <button class="button-next">
+                    <img src="./img/arrow.svg" alt="Next">
+                </button>
             </div>
+            <!-- /.swiper-container -->
         </div>
+        <!-- /.container -->
     </section>
     <!-- /.news -->
+
+    <!-- JQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <!-- Fancybox 3 -->
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <script src="./js/jquery.fancybox.min.js"></script>
+
+    <!-- Swiper.js -->
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/swiper.min.js"></script>
+
+    <!-- main.js -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
