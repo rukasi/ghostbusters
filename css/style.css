@@ -17,9 +17,14 @@ body {
 .header {
     display: flex;
     align-items: center;
-    height: 104px;
+    height: 100px;
     padding-left: 34px;
     border-bottom: 1px solid #D4D4D4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }
 
 .m-menu {
@@ -131,6 +136,7 @@ body {
     padding-top: 80px;
     padding-bottom: 80px;
     border-bottom: 1px solid #D4D4D4;
+    margin-top: 100px;
 }
 
 .container {
@@ -515,11 +521,6 @@ body {
         height: 80px;
         padding-right: 5%;
         padding-left: 5%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #fff;
     }
 
     .line {
